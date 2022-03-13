@@ -1,0 +1,37 @@
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(background-des2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+.table_joueur {
+    width: 1000px;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(209, 199, 199);
+
+
+}
+
+.interface_joueur1 {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+.interface_joueur2{
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
