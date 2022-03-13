@@ -22,6 +22,15 @@ body {
 
 }
 
+.joueur {
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
 .interface_joueur1 {
     width: 50%;
     float: left;
@@ -35,3 +44,12 @@ body {
     height: 600px;
     padding: 100px;
 }
+
+.scoreTotal {
+    text-align: left;
+    font-size: 20px;
+    color: #ff0000;
+
+}
+
+
