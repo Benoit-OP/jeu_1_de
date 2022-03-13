@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="bootstrap.css">
+        <title>Jeu 1 dé</title>
+    </head>
+    <body>
+
+    <script src=""></script>
+
+        <!-- Table de jeu: joueur 1 contre joueur 2 -->
+        <div class=""> 
+
+            <button class="newgame">Nouvelle partie</button>
+
+            <!-- Joueur 1 initialisation -->
+            <div class="interface_joueur1">
+                <div class="joueur_1 active" name="joueur1" id="joueur1">Joueur 1</div>
+                <div class="scoreTotal" id="scoreTotal_j1">0</div>
+
+                    <span class="actuel">Score actuel</span>
+                    <span class="joueur_score_actuel" id="scoreActuel">0</span>
+
+            </div>
+           
+            <!-- Joueur 2 initialisation -->
+            <div class="interface_joueur2">
+                <div class="joueur_2" name="joueur2" id="joueur2">Joueur 2</div>
+                <div class="scoreTotal" id="scoreTotal_j2">0</div>
+
+                    <span class="actuel">Score actuel</span>
+                    <span class="joueur_score_actuel" id="scoreActuel">0</span>
+
+            </div>
+
+            <button class="lancer"><i class="ion-ios-loop"></i>Jet de dé</button>
+            <button class="ajout_actuel">Ajout score actuel à total</button>
+        </div>
+
+
+    </body>
+</html>
