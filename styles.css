@@ -54,6 +54,7 @@ body {
 
 .interface_joueur2 .scoreTotal{
     margin-left: 300px;
+    
 }
 
 .interface_joueur2 .score_hold{
@@ -67,12 +68,21 @@ body {
 
 }
 
+.faces_de{
+    position: absolute;
+    width:150px;
+    height:150px;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    align-content:center;
+}
+
 button{
     position: absolute;
     width: 200px;
     font-size: 20px;
     cursor: pointer;
-    font-weight: 300;
+
     align-content:center;
 
 }
