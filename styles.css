@@ -3,32 +3,39 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(background-des2.jpg);
     background-size: cover;
     background-position: center;
-
     font-weight: 300;
     position: relative;
     height: 100vh;
     color: rgb(255, 255, 255);
 }
 
+
 .table_joueur {
-    width: 1000px;
+    width: 70%;
     height: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(209, 199, 199);
-
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius: 10px;
 
 }
 
 .joueur {
     font-size: 40px;
-    text-align: left;
     position: relative;
     margin-top: 20px;
     margin-bottom: 10px;
 
+}
+
+.interface_joueur1 .joueur{
+    text-align: left;
+}
+
+.interface_joueur2 .joueur{
+    text-align: right;
 }
 
 .interface_joueur1 {
@@ -40,9 +47,17 @@ body {
 
 .interface_joueur2{
     width: 50%;
-    float: left;
+    float: right;
     height: 600px;
     padding: 100px;
+}
+
+.interface_joueur2 .scoreTotal{
+    margin-left: 300px;
+}
+
+.interface_joueur2 .score_hold{
+    margin-left: 300px;
 }
 
 .scoreTotal {
@@ -52,4 +67,35 @@ body {
 
 }
 
+button{
+    position: absolute;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 300;
+    align-content:center;
 
+}
+
+.rules{
+    margin-top: 25px;
+    margin-left: 15%;
+}
+
+.newgame{
+    margin-top: 25px;
+    margin-left: 77%;
+}
+
+.lancer{
+    margin-top:350px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.ajout_total{
+    margin-top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}

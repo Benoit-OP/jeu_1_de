@@ -10,8 +10,8 @@
     </head>
     <body>
         <header>
-            <button class="rules">Les règles</button>
-            <button class="newgame">Nouvelle partie</button>
+            <button class="btn btn-light rules" id="rules"><img src="icons/file-ruled-fill.svg" alt=""> Les règles</button>
+            <button class="btn btn-light newgame" id="newgame"><img src="icons/plus-circle-fill.svg" alt=""> Nouvelle partie</button>
         </header>
         <script src=""></script>
     
@@ -22,31 +22,32 @@
         <!-- Table de jeu: joueur 1 contre joueur 2 -->
         <div class="table_joueur"> 
 
-
-
             <!-- Joueur 1 initialisation -->
             <div class="interface_joueur1">
                 <div class="joueur active" name="joueur1" id="joueur1">JOUEUR 1</div>
                 <div class="scoreTotal" id="scoreTotal_j1"><span>Votre score total: </span>0</div>
-
+                <div class="score_hold">
                     <span class="actuel">Score actuel</span>
                     <span class="joueur_score_actuel" id="scoreActuel"> 0</span>
-
+                </div>
+                <!-- Vainqueur! -->
             </div>
-           
-            <button class="lancer" id="lancerDe">Jet de dé</button>
-            <button class="ajout_total" id="ajoutTotal">Ajout score <br/>actuel à total</button>
-
+            <div class="dice_zone">
+                <button class="btn btn-outline-danger  lancer" id="lancerDe">lancer</button>
+                <button class="btn btn-warning ajout_total" id="ajoutTotal">Ajout score</button>
+            </div>
             <!-- Joueur 2 initialisation -->
             <div class="interface_joueur2">
                 <div class="joueur" name="joueur2" id="joueur2">JOUEUR 2</div>
                 <div class="scoreTotal" id="scoreTotal_j2"><span>Votre score total: </span>0</div>
-
+                <div class="score_hold">
                     <span class="actuel">Score actuel</span>
                     <span class="joueur_score_actuel" id="scoreActuel">0</span>
-
+                </div>
+                <!-- Vainqueur! -->
             </div>
 
+            <div class=""></div>
 
         </div>
 
