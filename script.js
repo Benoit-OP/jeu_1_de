@@ -2,6 +2,7 @@
 let scoreTotal;
 let scoreActuel;
 let lanceDe;
+let tour;
 
 /*jet du dé avec l'event click (bouton jet de dé) */
 document.querySelector('.lancer').addEventListener('click', function () {
@@ -11,13 +12,27 @@ document.querySelector('.lancer').addEventListener('click', function () {
         let resultDe = document.querySelector('faces_de');
         resultDe.src = 'face' + face +'.png';
 
-        if(dice != 1){
-            scoreActuel + dice ;
-            document.getElementById('#scoreActuel' + active).textContent == scoreActuel ;
+        if(face !== 1){
+            scoreActuel += dice ;
+            document.getElementById('#scoreActuel' + tour).textContent == scoreActuel ;
         } else {
             scoreActuel == 0;
             /* joueur suivant: fonction? variable pour alterner entre les joueurs? */
         }
 
     }
+})
+
+document.querySelector('.ajout_total').addEventListener('click' , function() {
+
+    if(lanceDe){
+        if(tour){
+            scoreTotal += scoreActuel;
+        }
+        
+        document.querySelector('')
+    }
+
+
+
 })
