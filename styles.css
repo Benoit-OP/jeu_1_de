@@ -30,34 +30,34 @@ body {
 
 }
 
-.interface_joueur1 .joueur{
+.interface_joueur_1 .joueur{
     text-align: left;
 }
 
-.interface_joueur2 .joueur{
+.interface_joueur_2 .joueur{
     text-align: right;
 }
 
-.interface_joueur1 {
+.interface_joueur_1 {
     width: 50%;
     float: left;
     height: 600px;
     padding: 100px;
 }
 
-.interface_joueur2{
+.interface_joueur_2{
     width: 50%;
     float: right;
     height: 600px;
     padding: 100px;
 }
 
-.interface_joueur2 .scoreTotal{
+.interface_joueur_2 .scoreTotal{
     margin-left: 300px;
     
 }
 
-.interface_joueur2 .score_hold{
+.interface_joueur_2 .score_hold{
     margin-left: 300px;
 }
 
