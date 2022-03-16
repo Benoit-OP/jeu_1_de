@@ -12,7 +12,7 @@ body {
 
 .table_joueur {
     width: 70%;
-    height: 60%;
+    height: 64%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,6 +21,7 @@ body {
     border-radius: 10px;
 
 }
+
 
 .joueur {
     font-size: 40px;
@@ -75,6 +76,11 @@ body {
     margin-top: 100px;
     transform: translateX(-50%);
     align-content:center;
+}
+
+.active { 
+    background-color: #b4ecf577; 
+    border-radius: 10px;
 }
 
 button{
