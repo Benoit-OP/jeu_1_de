@@ -37,7 +37,7 @@ document.querySelector('.ajout_total').addEventListener('click' , function() {
         document.querySelector('#scoreTotal_'+ tourActif).textContent = scoreTotal[tourActif];
 
         if(scoreTotal[tourActif] >= 100){
-            document.querySelector('#joueur' + tourActif).textContent = 'Vainqueur';
+            document.querySelector('#joueur_' + tourActif).textContent = 'Vainqueur';
             document.querySelector('.face').style.display = 'none';
             //document.querySelector('.interface_joueur_' + tour).classList.add('vainqueur');
             document.querySelector('.interface_joueur_' + tourActif).classList.remove('active');
@@ -52,7 +52,7 @@ document.querySelector('.ajout_total').addEventListener('click' , function() {
 
 function joueur_suivant(){
 
-    tourActif === 2 ? tourActif = 2: tourActif = 1;
+    tourActif === 1 ? tourActif = 2: tourActif = 1;
     scoreActuel = 0;
 
     document.getElementById('scoreActuel_1').textContent = '0';
