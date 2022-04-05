@@ -42,6 +42,7 @@ document.querySelector('.ajout_total').addEventListener('click' , function() {
             document.querySelector('.faces_de').style.display = 'none';
             document.querySelector('.interface_joueur_' + tourActif).classList.add('vainqueur');
             document.querySelector('.interface_joueur_' + tourActif).classList.remove('active');
+            document.querySelector('.lancer') = 'disabled';
             
             //document.querySelector('.interface_joueur_' + tourActif).classList.add('vainqueur');
             //document.querySelector('.interface_joueur_' + tourActif).classList.remove('active');

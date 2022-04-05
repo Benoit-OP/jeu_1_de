@@ -8,15 +8,46 @@
         <link type="text/css" rel="stylesheet" href="bootstrap.css">
         <title>Jeu 1 dé</title>
     </head>
+    <script src="bootstrap.js"></script>
+
     <body>
         <header>
-            <button class="btn btn-light rules" id="rules"><img src="file-earmark-ruled-fill.svg" alt=""> Les règles</button>
+            <button class="btn btn-light rules" id="rules" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="file-earmark-ruled-fill.svg" alt=""> Les règles</button>
             <button class="btn btn-light newgame" id="newgame"><img src="plus-circle-fill.svg" alt=""> Nouvelle partie</button>
         </header>
+                
+            <!-- Modal pour les règles du jeu -->  
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Les règles</h5>
+                            <button style="margin-left: 85%;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <p>
+                                Le jeu comprend 2 joueurs sur un seul et même écran.
+                                Chaque joueur possède un score temporaire: Score actuel (celui du tour en cours) et un score Total . À chaque tour, le joueur a son Score Actuel initialisé à 0 et 
+                                peut lancer un dé autant de fois qu'il le souhaite. Le résultat d’un lancer est ajouté au Score actuel.
+                           </p>
+                            <p>
+                                Lors de son tour, le joueur peut décider à tout moment de: 
+                                <ul>
+                                   <li> Cliquer sur l’option “Ajouter Score”, qui permet d’envoyer les points Actuel vers le Total. Ce sera alors le tour de l’autre joueur. </li>
+                                   <li>Lancer le dé. S’il obtient un 1, son score Actuel est perdu et c’est la fin de son tour.</li>
+                                </ul>
+                               Le premier joueur qui atteint les 100 points sur Total gagne le jeu.
+                            </p>
 
+                        </div>
+                        <div class="modal-footer" style="margin-bottom: 40px;">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="margin-top: 30px;">Fermer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
-        <!-- Modal pour les règles du jeu -->
-
+    
 
 
         <!-- Table de jeu: joueur 1 contre joueur 2 -->
@@ -26,8 +57,8 @@
             <div class="interface_joueur_1 active">
                 <div class="joueur" name="joueur1" id="joueur_1">JOUEUR 1</div>
                 <div class="scoreTotal" id="scoreTotal_1">22</div>
-                <div class="score_hold">
-                    <span class="actuel">Score actuel</span>
+                <div class="score_hold_1">
+                    <span class="actuel">Score actuel:</span>
                     <span class="joueur_score_actuel" id="scoreActuel_1">10</span>
                 </div>
                 <!-- Vainqueur! -->
@@ -46,16 +77,16 @@
             <div class="interface_joueur_2 ">
                 <div class="joueur" name="joueur2" id="joueur_2">JOUEUR 2</div>
                 <div class="scoreTotal" id="scoreTotal_2">40</div>
-                <div class="score_hold">
-                    <span class="actuel">Score actuel</span>
+                <div class="score_hold_2">
+                    <span class="actuel">Score actuel:</span>
                     <span class="joueur_score_actuel" id="scoreActuel_2">15</span>
                 </div>
                 <!-- Vainqueur! -->
                 <div class="vainqueur_j2" style="display: none;">Vainqueur!</div>
             </div>          
-            <script src="script.js"></script>
-        </div>
 
+        </div>
+        <script src="script.js"></script>
 
     </body>
 </html>
